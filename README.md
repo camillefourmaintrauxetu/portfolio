@@ -1,2 +1,2 @@
 # portfolio
-Mon nouveau portfolio mis à jour en React
+Mon nouveau portfolio mis à jour en React.
