@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export function formatDate(date: Date) {
   // Extraire le jour, le mois et l'année
   let day = date.getDate();
