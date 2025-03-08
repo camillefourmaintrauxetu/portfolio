@@ -1,0 +1,35 @@
+/* Boutons de tags */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+}
+  
+.tags-container button {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+  
+.tags-container button:hover {
+    background: #BBDDDD;
+}
+  
+.tags-container button.active {
+    background: #0123ff;
+    color: #fff;
+    border-color: #0012ff;
+    cursor: default;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 97%;
+}
