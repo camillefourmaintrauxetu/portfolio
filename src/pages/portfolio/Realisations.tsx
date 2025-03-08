@@ -1,57 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Realisation } from "./Realisation";
 import { motion, AnimatePresence } from "framer-motion";
+import portfolioData from "./Data";
 
 // Données des réalisations
-const realisationsData = [
-  {
-    id: "stage2024portfolio",
-    title: "Stage intégrateur SOA webMethods avril/juin 2024 chez E-Mothep",
-    date: new Date(2024, 3),
-    tags: ["Web", "Back-end", "Intégration"],
-    content: <p>Voir mes réalisations durant le <Link to="/cursus#stage2024container">stage</Link>.</p>,
-  },
-  {
-    id: "sae509",
-    title: "1. Saé 5.09 : WEB BACK",
-    date: new Date(2024, 2),
-    tags: ["Web", "Back-end", "API"],
-    content: (
-      <>
-        <h4>Le projet</h4>
-        <p>Développement d'un site internet de gestion de rendez-vous...</p>
-        <img src="/img/portfolio/saeProfile.png" alt="placeholder" />
-      </>
-    ),
-  },
-  {
-    id: "sae501",
-    title: "2. Saé 5.01 : Emulateur RiscV",
-    date: new Date(2024, 0),
-    tags: ["Systèmes embarqués", "Rust", "Architecture processeur"],
-    content: (
-      <>
-        <h4>Introduction à Rust</h4>
-        <p>Développement d’un émulateur basé sur un processeur RISC-V...</p>
-        <img src="/img/portfolio/riscV_encodage.png" alt="riscV_encodage" />
-      </>
-    ),
-  },
-  {
-    id: "sae402",
-    title: "3. SAÉ 4.A.02.2 : Développement d'une application complexe",
-    date: new Date(2023, 8),
-    tags: ["Jeu vidéo", "Développement", "C++"],
-    content: (
-      <>
-        <h4>Idées de gameplay</h4>
-        <p>Conception et développement d’un jeu en respectant un cahier des charges strict...</p>
-        <img src="/img/portfolio/versionBasique.gif" alt="capture du jeu" />
-      </>
-    ),
-  },
-];
+const realisationsData = portfolioData;
 
 // Extraire tous les tags uniques
 const allTags = Array.from(new Set(realisationsData.flatMap((r) => r.tags)));
