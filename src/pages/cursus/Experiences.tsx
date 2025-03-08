@@ -1,3 +1,5 @@
+import EMothep from "../../parts/E-Mothep";
+
 export default function Experiences() {
     return (
       <>        
@@ -13,10 +15,10 @@ export default function Experiences() {
                 </div>
                 <div className="subcontainer" id="stage2024container">
                     <div>
-                        <h3 id="stage2024" style={{ float: "left" }}>Stage intégrateur SOA webMethods pendant 10 semaines d'avril à juin 2024 chez <span className="protected">E-Mothep</span> [Lille]</h3>
+                        <h3 id="stage2024" style={{ float: "left" }}>Stage intégrateur SOA webMethods pendant 10 semaines d'avril à juin 2024 chez <EMothep/> [Lille]</h3>
                         <img src="/img/cursus/emothep_logo.png" alt="logo E-Mothep" style={{ float: "right" }}/>
                     </div>
-                    <p><a href="https://e-mothep.fr/" className="protected">E-Mothep</a> est une entreprise spécialisée dans le développement de solutions logicielles.</p>
+                    <p><EMothep/> est une entreprise spécialisée dans le développement de solutions logicielles.</p>
                     
                     <ul>
                         <li><strong>Projet principal : </strong>
