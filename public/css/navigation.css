@@ -9,23 +9,65 @@ nav {
     width: 100%;
 }
 
-nav a {
+.navlink {
     text-decoration: none;
     color: #fff;
     margin: 5px;
     white-space: nowrap;
 }
 
-nav a:hover{
+.navlink:link {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navlink:visited {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navlink:active {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navlink:hover{
     color: #BBDDDD;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-nav a.current:hover{
-    color: #FF5151;
+
+.navlink.current{
+    color: #00aaff;
+    cursor: default;
 }
 
-nav a.current{
-    color: #FF5858;
+a:link {
+    color: #012345;
+    background-color: transparent;
+    text-decoration:none;
+}
+
+a:hover {
+    color: #002c99;/*#abcdef;*/
+    background-color: transparent;
+    text-decoration:underline;
+}
+
+a:visited {
+    color: #002c69;
+    background-color: transparent;
+    text-decoration: line-through;
+}
+  
+a:active {
+    color: #002c00;
+    background-color: transparent;
+    text-decoration: underline;
 }
   
 /* Si la navigation devient fixe */
