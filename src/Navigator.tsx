@@ -2,7 +2,7 @@ import {Routes, Route } from "react-router-dom";
 import IntroductionPage from './pages/Introduction';
 
 import CursusPage from './pages/cursus/Curriculum';
-import PortfolioPage from './pages/Portfolio';
+import PortfolioPage from './pages/portfolio/Realisations';
 import PassionsPage from './pages/Passions';
 import RedirectionPage from './pages/Redirection';
 import DocumentsPage from './pages/Documents';
@@ -23,6 +23,7 @@ export default function Navigator() {
 				<Route path="/accueil" element={<IntroductionPage />} />
 
 				<Route path="/cursus" element={<CursusPage />} />
+				<Route path="/cursus/stage" element={<CursusPage />} />
 				<Route path="/parcours" element={<CursusPage />} />
 				<Route path="/courses" element={<CursusPage />} />
 				<Route path="/curriculum" element={<CursusPage />} />
