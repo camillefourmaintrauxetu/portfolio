@@ -13,12 +13,12 @@ export default function CurriculumPage() {
       scrollToSection(location.hash.substring(1));
     }
   }, [location]);
-    return (
-      <>
-        <Education/>
-        <Skills/>
-        <Qualities/>
-        <Experiences/>
-      </>
-    );
+  return (
+    <>
+      <Education />
+      <Skills />
+      <Qualities />
+      <Experiences />
+    </>
+  );
 }
