@@ -50,3 +50,21 @@
   gap: 20px;
   width: 97%;
 }
+
+#portfolioContainer {
+  text-align: left;
+}
+#advancedSearchButtonContainer {
+  text-align: center;
+}
+
+#advancedSearchButton {
+  width: 225px;
+}
+
+.timeperiod {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0;
+}
