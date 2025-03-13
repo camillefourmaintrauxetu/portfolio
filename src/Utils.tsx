@@ -4,12 +4,13 @@ export function formatDate(date: Date) {
   let month = date.getMonth() + 1; // Les mois commencent à 0
   let year = date.getFullYear();
 
-  // Ajouter un zéro devant le jour et le mois si nécessaire
-  day = day < 10 ? 0 + day : day;
-  month = month < 10 ? 0 + month : month;
+  // Formater avec deux chiffres pour jour et mois, et quatre chiffres pour l'année
+  let formattedDay = day.toString().padStart(2, "0");
+  let formattedMonth = month.toString().padStart(2, "0");
+  let formattedYear = year.toString().padStart(4, "0");
 
   // Retourner la date sous le format dd/mm/yyyy
-  return `${day}/${month}/${year}`;
+  return `${formattedDay}/${formattedMonth}/${formattedYear}`;
 }
 
 export function newDate(year: number, month: number, day: number) {
